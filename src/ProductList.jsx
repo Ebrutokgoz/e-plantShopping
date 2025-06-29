@@ -3,6 +3,8 @@ import './ProductList.css'
 import CartItem from './CartItem';
 import { useSelector, useDispatch } from "react-redux";
 import { addItem } from "./CartSlice";
+import icon from './assets/icon.png';
+
 
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
@@ -279,7 +281,7 @@ function ProductList({ onHomeClick }) {
             <div className="navbar" style={styleObj}>
                 <div className="tag">
                     <div className="luxury">
-                        <img src="https://cdn.pixabay.com/photo/2020/11/04/07/52/pumpkin-5711689_960_720.png" alt="" />
+                        <img style={{ marginRight: '1rem' }} src={icon} alt="Paradise Nursery" />
                         <a href="/" onClick={(e) => handleHomeClick(e)}>
                             <div>
                                 <h3 style={{ color: 'white' }}>Paradise Nursery</h3>
